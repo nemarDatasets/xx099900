@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.5072%2Ffk2xx099900-blue)](https://doi.org/10.5072/fk2xx099900)
+
 [![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003805-blue)](https://doi.org/10.82901/nemar.on003805)
 
 > Introduction
