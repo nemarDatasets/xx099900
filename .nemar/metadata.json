@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
-  "title": "Multisensory Gamma Entrainment",
-  "description": "This dataset comprises EEG recordings from a single healthy participant (23-year-old male) exposed to multisensory stimulation at gamma frequencies (40Hz). The experiment investigates brain entrainment responses to auditory (5kHz amplitude-modulated at 40Hz), visual (20Hz flickering white light from LED array), and combined audio-visual stimulation, each presented for 40 seconds. The 20Hz visual stimulation is designed to drive 40Hz brain oscillations through harmonic frequencies. The study aims to characterize synchronized brain oscillations across different sensory modalities, with potential implications for understanding gamma entrainment mechanisms relevant to neurodegenerative diseases such as Alzheimer's disease.",
-  "methods_description": "EEG data were recorded from 19 monopolar channels using the standard 10/20 system referenced to earlobes at 500Hz sampling rate with electrode impedance maintained below 20kOhm. Auditory stimulation consisted of a 5kHz carrier tone amplitude-modulated with a 40Hz rectangular wave (4% duty cycle, 1ms on per 25ms cycle). Visual stimulation was a 20Hz flickering white light produced by an LED array at 50cm distance with 50% duty cycle, designed to drive 40Hz brain oscillations through harmonic frequencies. Preprocessing followed Makoto's pipeline including highpass filtering (>1Hz), line noise removal, bad channel rejection and interpolation, average re-referencing, Artifact Subspace Reconstruction (ASR), re-referencing to average, independent component analysis (ICA) for source separation, dipole fitting, and rejection of bad dipoles. All preprocessing was performed using EEGLab MATLAB toolbox.",
+  "pipeline_stage": "enriched",
+  "title": "[TEST COPY] Multisensory Gamma Entrainment",
+  "description": "This dataset contains EEG recordings from a single healthy participant (23-year-old male) investigating gamma-band brain entrainment in response to different sensory modalities. The study examines auditory (5 kHz carrier tone amplitude-modulated at 40 Hz), visual (20 Hz flickering light), and combined audio-visual stimulation, each presented for 40 seconds. The research aims to characterize how multimodal sensory stimulation produces synchronized brain oscillations.",
+  "methods_description": "EEG data were recorded from 19 monopolar channels using the standard 10/20 system referenced to earlobes at 500 Hz sampling rate with electrode impedance maintained below 20 kOhm. Auditory stimulation consisted of a 5 kHz carrier tone amplitude-modulated with a 40 Hz rectangular wave (4% duty cycle). Visual stimulation was a 20 Hz flickering white LED array at 50 cm distance. Preprocessing followed Makoto's pipeline including highpass filtering (>1 Hz), line noise removal, bad channel rejection and interpolation, average re-referencing, Artifact Subspace Reconstruction, independent component analysis, dipole fitting, and bad dipole rejection using EEGLab.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,31 +19,22 @@
       "term": "gamma entrainment"
     },
     {
+      "term": "sensory stimulation"
+    },
+    {
       "term": "multisensory integration"
-    },
-    {
-      "term": "auditory stimulation"
-    },
-    {
-      "term": "visual stimulation"
     },
     {
       "term": "brain oscillations"
     },
     {
-      "term": "independent component analysis"
+      "term": "auditory-visual stimulation"
     },
     {
-      "term": "preprocessing"
+      "term": "40 Hz stimulation"
     },
     {
-      "term": "Artifact Subspace Reconstruction"
-    },
-    {
-      "term": "Alzheimer's disease"
-    },
-    {
-      "term": "neurodegenerative disease"
+      "term": "20 Hz stimulation"
     }
   ],
   "related_identifiers": [
@@ -53,14 +44,24 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003805",
+      "identifier": "10.18112/openneuro.ds003805.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/xx099900",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.18112/openneuro.ds003805.v1.0.0",
+      "identifier": "https://test.nemar.org/dataset/xx099900",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.82901/nemar.on003805",
       "identifier_type": "DOI",
-      "relation_type": "IsDerivedFrom"
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_specific": "EEG Dataset",
@@ -78,5 +79,5 @@
     ".txt",
     ".yml"
   ],
-  "source_hash": "cb63753fd35a8232038d32accb46ed3303ae75bb939fd29d85ef0ba9c3c88797"
+  "source_hash": "80aecc36946cd86c8f9b4b6b82cc3673a9c638e30f0935ea77487b01135d8d01"
 }
